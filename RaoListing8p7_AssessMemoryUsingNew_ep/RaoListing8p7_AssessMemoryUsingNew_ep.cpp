@@ -12,11 +12,16 @@ using namespace std;
 
 void AccessMemory();
 void AccessMemory2();
+void AllocateRelease();
+void AllocateRelease2();
+
 
 int main(int argc, char** argv) {
     
-    AccessMemory(); cout<<endl;
-    AccessMemory2();
+    AccessMemory(); cout<<endl; //8.7
+    //AccessMemory2(); cout<<endl; //8.7
+    //AllocateRelease(); cout<<endl; //8.8
+    //AllocateRelease2(); cout<<endl; //8.8
 
     return 0;
 }
@@ -50,4 +55,55 @@ void AccessMemory2()
     
     delete pointsToScore;
 }
+void AllocateRelease()
+{
+    cout<<"Input desired number of entries: ";
+    int entry = 0;
+    cin>>entry;
+    
+    int* number = new int [entry];
+    
+    cout<<"Number of entries: "<<hex<<entry<<endl;
+    cout<<"Address: "<<number<<endl;
+    
+    delete number;
+}
+void AllocateRelease2()
+{
+    cout<<"Enter the I.Q, of the octopus: ";
+    int IQ = 0;
+    cin>>IQ;
+    
+    int* intelligence = new int [IQ];
+    
+    cout<<"The octopus has an I.Q. of "<<IQ<<endl;
+    cout<<"Location: "<<intelligence<<endl;
+    
+    delete intelligence;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
