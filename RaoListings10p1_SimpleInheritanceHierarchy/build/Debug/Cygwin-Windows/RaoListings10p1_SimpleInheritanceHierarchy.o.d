@@ -1,0 +1,2 @@
+build/Debug/Cygwin-Windows/RaoListings10p1_SimpleInheritanceHierarchy.o: \
+ RaoListings10p1_SimpleInheritanceHierarchy.cpp
