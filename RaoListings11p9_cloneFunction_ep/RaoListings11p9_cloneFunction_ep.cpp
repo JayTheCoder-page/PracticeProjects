@@ -20,7 +20,7 @@ public:
 class Laptop:public Electronic
 {
 public:
-    Electronic* Clone() override
+    Electronic* Replica() override
     {
         return new Laptop(*this);
     }
@@ -32,14 +32,14 @@ public:
 class HP final:public Laptop
 {
 public:
-    Electronic* Clone() override
+    Electronic* Replica() override
     {
         return new HP(*this);
     }
 };
 class iPhone final:public Electronic
 {
-    Electronic* Clone() override
+    Electronic* Replica() override
     {
         return new iPhone(*this);
     }
@@ -51,8 +51,6 @@ class iPhone final:public Electronic
 int main(int argc, char** argv) {
     
     cloneFunction();
-    //Program will NOT run
-    //Figure this issue out later
 
     return 0;
 }
