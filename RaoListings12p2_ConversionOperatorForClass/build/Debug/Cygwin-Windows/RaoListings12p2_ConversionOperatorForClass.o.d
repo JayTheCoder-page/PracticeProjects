@@ -1,0 +1,2 @@
+build/Debug/Cygwin-Windows/RaoListings12p2_ConversionOperatorForClass.o: \
+ RaoListings12p2_ConversionOperatorForClass.cpp
